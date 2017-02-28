@@ -1,0 +1,49 @@
+<?php
+setcookie("user", "RAIT", time() + (86400 * 30), '/');
+?>
+
+<html>
+  <head>
+    <link href='style.css' rel='stylesheet'>
+	<script src="app.js"></script>  
+	<script src="jquery.js"></script>
+  </head>
+  <body>
+
+    <div class="menu">
+      
+      <div class="icon-close">
+        <img src="close.png">
+      </div>
+	  
+		<p class = "option">Login</p>
+		<div class="login-form">
+			<p>Email : deepeshdwivedi_3@yahoo.com
+			Phone : 9867146861</p>
+			<i class = "contact-close" onclick = "contactclose()">Close</i>
+		</div>
+		
+		<p class = "option" onclick = "contactopen()">Contact Us</p>
+		<div class="contact-info">
+			<p>Email : deepeshdwivedi_3@yahoo.com
+			Phone : 9867146861</p>
+			<i onclick = "contactclose()">Close</i>
+		</div>
+    </div>
+
+    <div class="jumbotron">
+
+      <div class="icon-menu">
+        <p><i>> MENU</i></p>
+      </div>
+	  
+	   
+	</div>
+	
+	<script>
+		$(document).ready(main);
+		$(".contact-info").hide();
+	</script>
+	
+  </body>
+</html>

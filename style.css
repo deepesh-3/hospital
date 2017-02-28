@@ -1,0 +1,163 @@
+/* Initial body */
+body {
+	left: 0px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Initial menu */
+.menu {
+	background-image: url("backmenu.jpg");
+	left: -350px;	/* start off behind the scenes */
+	height: 100%;
+	position: fixed;
+	width: 350px;
+	overflow-y: scroll;
+}
+
+/* Basic styling */
+
+.jumbotron {
+	text-align : center;
+	background-image: url("backjumbo.jpg"); 
+	left: 0px;
+	height: 100%;
+	color:#fff;
+	overflow-y: scroll;
+}
+
+.menu ul {
+	border-top: 1px solid #636366;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu p{
+	color: #fff;
+}
+
+.menu li {
+	border-bottom: 1px solid #636366;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 45px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+.menu a {
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.icon-close {
+	cursor: pointer;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 25px;
+}
+
+.icon-menu {
+	color: #FFD700;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-top: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 80px;
+}
+
+.login-menu {
+	color: #FFD700;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-top: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+.icon-menu i {
+	margin-right: 5px;
+}
+
+.contact-info {
+	color: #fff;
+	width: 280px;
+	height: 90px;
+}
+
+.login-form {
+	color: #fff;
+	width: 280px;
+	height: 200px;
+}
+
+.registration-form {
+	color: #fff;
+	width: 280px;
+	height: 188px;
+}
+
+.fdelete-form {
+	color: #fff;
+	width: 280px;
+	height: 150px;
+}
+
+.fupload-form {
+	color: #fff;
+	width: 280px;
+	height: 150px;
+}
+
+.passchange-form {
+	color: #fff;
+	width: 280px;
+	height: 200px;
+}
+
+.option {
+	padding-left: 10px;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+}
+
+.pname {
+	color: #FF4500;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+.jumbotron p {
+	text-align: center;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.upload-table {
+	border: 1px solid white;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px;
+	color: white;
+	width: 80%;
+}
+
+.upload-table td, th {
+	border: 1px solid white;
+	border-collapse: collapse;
+}

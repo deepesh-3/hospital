@@ -1,0 +1,92 @@
+<?php
+	require('connect.php');
+	$msg = "Not Working";
+    // If the values are posted, insert them into the database.
+    if (isset($_POST['usern']) && isset($_POST['passw'])){
+        $username = $_POST['usern'];
+        $password = $_POST['passw'];
+ 
+        $query = "INSERT INTO `members` (username, pass) VALUES ('$username', '$password')";
+        $result = mysql_query($query);
+        if($result){
+            $msg = "User Created Successfully.";
+        }
+    }
+?>
+	
+<html>
+  <head>
+    <link href='style.css' rel='stylesheet'>
+	<script src="app.js"></script>  
+	<script src="jquery.js"></script>
+  </head>
+  <body>
+
+    <div class="menu">
+      
+      <div class="icon-close">
+        <img src="close.png">
+      </div>
+	  
+		<p class = "option login-open">Login</p>
+		<div class="login-form">
+			<form method = "POST" action="checklogin.php">
+				<fieldset>
+					<legend>Login Information:</legend>
+					<label>Username : </label><br>
+					<input type="text" name="usern"><br>
+					<label>Password : </label><br>
+					<input type="text" name="passw"><br>
+					<input type="submit" value="Sign In"><br>
+				</fieldset>
+			</form>
+			<i class = "login-close">Close</i>
+		</div>
+		
+		<p class = "option registration-open">Register</p>
+		<div class="registration-form">
+			<?php
+			if(isset($msg) & !empty($msg)){
+				echo "<p>$msg</p>";
+			}
+			?>
+			<form method = "POST" action="">
+				<fieldset>
+					<legend>New User Information:</legend>
+					<label>Username : </label><br>
+					<input type="text" name="usern"><br>
+					<label>Password : </label><br>
+					<input type="text" name="passw"><br>
+					<input type="submit" value="Register"><br>
+				</fieldset>
+			</form>
+			<i class = "registration-close">Close</i>
+		</div>
+		
+		<p class = "option contact-open">Contact Us</p>
+		<div class="contact-info">
+			<p>Email : kaushik.swapnil5@gmail.com
+			Phone : 9619152855</p>
+			<i class="contact-close">Close</i>
+		</div>
+    </div>
+
+    <div class="jumbotron">
+
+      <div class="icon-menu">
+        <p><i>> MENU<?php
+			echo "5";
+			?></i></p>
+      </div>
+	   
+	</div>
+	
+	<script>
+		$(document).ready(main);
+		$(".contact-info").hide();
+		$(".login-form").hide();
+		$(".registration-form").hide();
+	</script>
+	
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Y.D. Patel Hospital</title>
+<style>
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: lightgrey;
+
+.center1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+}
+
+div {
+    background-color: lightgrey;
+    width: 1000px;
+    padding: 40px;
+    border: 25px red;
+    margin-left: auto
+    margin-right: auto;
+}
+p{ background-color:#D00000 align:"center" }
+a{ color:#000000 align:"center" ;}
+ ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        width: 100px;
+        text-align: center;
+        line-height: 21px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        background: #f2f2f2;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+</style>
+</head>
+<body >
+<center>
+<h1>
+<font face="BankGothic Md BT" color=990099><marquee>Welcome to Y.D. Patel Hospital</marquee>
+
+</h1>
+</center>
+
+<p>
+  <ul class="center">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About us.htm">About</a></li>
+        <li>
+            <a href="#">Departments&#9662;</a>
+            <ul>
+                <li><a href="Surgery.html">Surgery</a></li>
+                <li><a href="Ped.html">Pediatrics</a></li>
+                <li><a href="Ortho.html">Orthopedics</a></li>
+                <li><a href="ent.html">E.N.T.</a></li>
+</ul>
+        </li>
+     
+         <li><a href="Contact.html">Contact us</a></li>
+    </ul>
+
+</p>
+<h2><center><font color="red"><br/><br/><br/>Appointment Form</font></center></h2>
+ <div class="center" align="justify" style="top:20px; border:10px lightgrey;">
+<form name="Appointment Form" method="post" action="Info.php">
+<table width="500px">
+
+  <label>Patient's First Name *</label>
+
+
+  <input  type="text" name="first_name" maxlength="50" size="30">
+
+ 
+<br/>
+
+  <label>Patient's Last Name *</label>
+
+  <input  type="text" name="last_name" maxlength="50" size="30">
+
+<br/>
+
+  <label>Gender *</label>
+
+
+  <label><input  type="radio" name="act" value="two"/>Male</label>
+  <label><input  type="radio" name="act" value="one"/>Female</label>
+
+<br/>
+  <label>Doctor *</label>
+
+  <select name="depts">
+<option>Dr.Ramesh Shetty(Surgery)</option>
+<option>Dr.Suresh Patel(Pediatrics)</option>
+<option>Dr.Abhirup Bhattacharya(Orthopedics)</option>
+<option>Dr.Aman Chintagada(E.N.T.)</option>
+</select>
+<br/>
+
+  <label >Email Address *</label>
+  <input  type="text" name="email" maxlength="80" size="30">
+<br/>
+
+  <label>Telephone Number</label>
+  <input  type="text" name="telephone" maxlength="30" size="30">
+<br/>
+  <label>Symptoms *</label>
+
+
+  <textarea  name="symptoms" maxlength="1000" cols="25" rows="6"></textarea>
+
+ <br/>
+  <input type="submit" value="Submit">  
+</form>
+
+</div> 
+</body>
+<style>
+p{ background-color:#D00000 align:"center" }
+a{ color:#000000 align:"center" ;}
+ ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        width: 266.6px;
+        text-align: center;
+        line-height: 21px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        background: #f2f2f2;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+</style>
+</html>
